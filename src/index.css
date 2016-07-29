@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+table, td, th {
+  border: 1px solid #ccc;
+}
+
+caption {
+  text-align: left;
+}
