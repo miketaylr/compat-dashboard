@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-let BUGZILLA_URL = "https://bugzilla.mozilla.org/buglist.cgi?";
-let BUGZILLA_REST_URL = "https://bugzilla.mozilla.org/rest/bug?";
+const BUGZILLA_URL = "https://bugzilla.mozilla.org/buglist.cgi?";
+const BUGZILLA_REST_URL = "https://bugzilla.mozilla.org/rest/bug?";
 
-let queries = {
+const queries = {
   desktop: {
     needsdiagnosis: "list_id=13129840&status_whiteboard_type=anywordssubstr&status_whiteboard=needsdiagnosis&priority=--&priority=P1&priority=P2&priority=P3&priority=P4&resolution=---&query_format=advanced&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=Desktop&product=Tech%20Evangelism",
     needscontact: "list_id=13129839&status_whiteboard_type=anywordssubstr&status_whiteboard=needscontact&priority=--&priority=P1&priority=P2&priority=P3&priority=P4&resolution=---&query_format=advanced&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=Desktop&product=Tech%20Evangelism",

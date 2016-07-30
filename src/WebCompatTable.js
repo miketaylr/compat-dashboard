@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-let WEBCOMPAT_URL = "https:/webcompat.com/issues?";
-let GITHUB_API_URL = "https://api.github.com/repos/webcompat/web-bugs/issues?per_page=100&";
+const WEBCOMPAT_URL = "https:/webcompat.com/issues?";
+const GITHUB_API_URL = "https://api.github.com/repos/webcompat/web-bugs/issues?per_page=100&";
 
-let queries = {
+const queries = {
   needsdiagnosis: "state=open&labels=status-needsdiagnosis",
   needscontact: "state=open&labels=status-needscontact",
   needstriage: "state=open&labels=status-needstriage",
