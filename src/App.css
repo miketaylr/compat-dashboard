@@ -1,24 +1,70 @@
 .App {
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.App-item + .App-item {
+  margin: 2em 0 0 0;
+}
+
+.App-item-title {
+  font-size: 2em;
+  margin: 0 0 .8rem 0;
+  color: #434a54;
+}
+
+.App-item-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-card {
+  display: block;
+  color: #fff;
+  background-color: #fff;
   text-align: center;
+  flex-grow: 1;
 }
 
-.App-logo {
-  animation: spin infinite 20s linear;
-  height: 80px;
+  .App-card + .App-card {
+    margin: 0 0 0 2em;
+  }
+
+.App-card--link {
+  display: block;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-card--needsTriage {
+  background-color: #f90;
 }
 
-.App-intro {
-  font-size: large;
+.App-card--needsDiagnosis {
+  background-color: #efce82;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.App-card--needsContact {
+  background-color: #b9edce;
+}
+
+.App-card--contactReady {
+  background-color: #7abce1;
+}
+
+.App-card--siteWait {
+  background-color: #b0daf0;
+}
+
+.App-card-number {
+  font-size: 2em;
+  padding: 2rem;
+  font-weight: 700;
+}
+
+.App-card-title {
+  padding: 2rem;
+  color: #434a54;
+  background-color: #fff;
 }
