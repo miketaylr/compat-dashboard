@@ -61,27 +61,31 @@ class BugzillaTable extends Component {
 
   render() {
     return (
-      <table>
-        <caption>webcompat.com</caption>
-        <thead>
-        <tr>
-          <th><a href={this.state.needstriageURL}>Needs Triage</a></th>
-          <th><a href={this.state.needsdiagnosisURL}>Needs Diagnosis</a></th>
-          <th><a href={this.state.needscontactURL}>Needs Contact</a></th>
-          <th><a href={this.state.contactreadyURL}>Contact Ready</a></th>
-          <th><a href={this.state.sitewaitURL}>Site Wait</a></th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{this.state.needstriage}</td>
-            <td>{this.state.needsdiagnosis}</td>
-            <td>{this.state.needscontact}</td>
-            <td>{this.state.contactready}</td>
-            <td>{this.state.sitewait}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="App-item">
+        <h2 className="App-item-title">Webcompat.com</h2>
+        <div className="App-item-cards">
+          <div className="App-card App-card--needsTriage">
+            <div className="App-card-number">???</div>
+            <div className="App-card-title">Needs Triage</div>
+          </div>
+          <a className="App-card App-card--link App-card--needsDiagnosis" href={this.state.needsdiagnosisURL}>
+            <div className="App-card-number">{this.state.needsdiagnosis}</div>
+            <div className="App-card-title">Needs Diagnosis</div>
+          </a>
+          <a className="App-card App-card--link App-card--needsContact" href={this.state.needscontactURL}>
+            <div className="App-card-number">{this.state.needscontact}</div>
+            <div className="App-card-title">Needs Contact</div>
+          </a>
+          <a className="App-card App-card--link App-card--contactReady" href={this.state.contactreadyURL}>
+            <div className="App-card-number">{this.state.contactready}</div>
+            <div className="App-card-title">Contact Ready</div>
+          </a>
+          <a className="App-card App-card--link App-card--siteWait" href={this.state.sitewaitURL}>
+            <div className="App-card-number">{this.state.sitewait}</div>
+            <div className="App-card-title">Site Wait</div>
+          </a>
+        </div>
+      </div>
     )
   }
 }

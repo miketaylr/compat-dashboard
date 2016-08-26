@@ -1,13 +1,19 @@
-body {
+
+html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-table, td, th {
-  border: 1px solid #ccc;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-caption {
-  text-align: left;
+body {
+  font-family: '-apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+  margin: 0;
+  padding: 0;
+  background-color: #f1f2f6;
 }
