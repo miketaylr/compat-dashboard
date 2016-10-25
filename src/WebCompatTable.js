@@ -64,10 +64,10 @@ class BugzillaTable extends Component {
       <div className="App-item">
         <h2 className="App-item-title">Webcompat.com</h2>
         <div className="App-item-cards">
-          <div className="App-card App-card--needsTriage">
+          <a className="App-card App-card--link App-card--needsTriage" href={this.state.needstriageURL}>
             <div className="App-card-number">{this.state.needstriage}</div>
             <div className="App-card-title">Needs Triage</div>
-          </div>
+          </a>
           <a className="App-card App-card--link App-card--needsDiagnosis" href={this.state.needsdiagnosisURL}>
             <div className="App-card-number">{this.state.needsdiagnosis}</div>
             <div className="App-card-title">Needs Diagnosis</div>
