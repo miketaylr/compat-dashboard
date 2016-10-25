@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-const WEBCOMPAT_URL = "https:/webcompat.com/issues?";
+const WEBCOMPAT_URL = "https://webcompat.com/issues?";
 const GITHUB_API_URL = "https://api.github.com/repos/webcompat/web-bugs/issues?per_page=100&";
 
 const queries = {
