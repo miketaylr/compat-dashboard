@@ -65,7 +65,7 @@ class BugzillaTable extends Component {
         <h2 className="App-item-title">Webcompat.com</h2>
         <div className="App-item-cards">
           <div className="App-card App-card--needsTriage">
-            <div className="App-card-number">???</div>
+            <div className="App-card-number">{this.state.needstriage}</div>
             <div className="App-card-title">Needs Triage</div>
           </div>
           <a className="App-card App-card--link App-card--needsDiagnosis" href={this.state.needsdiagnosisURL}>
